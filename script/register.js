@@ -61,8 +61,23 @@ function getErrorMessage(error) {
         return "email já está em uso"
     }}
    
+function login() {
+    showLoading()
+    setTimeout(() => window.location.href = "index.html", 500);
+}
+function togglePassword(button) {
+    const password = form.password();
+    const confirmpassword = form.confirmpassword();
+    
+    password.type = password.type === "password" ? "text" : "password";
+    confirmpassword.type = confirmpassword.type === "password" ? "text" : "password";
+    if (password.type === "text") {
+        button.textContent = "Ocultar senha";
+    } else {
+        button.textContent = "Mostrar senha";
+    }
 
-
+}
 const form = {
     email: () => document.getElementById('email'),
     emailinvaliderror: () => document.getElementById('email-invalid-error'),

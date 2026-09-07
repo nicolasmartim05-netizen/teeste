@@ -84,3 +84,16 @@ function toggleButtonsDisable() {
         alert('Se o email for cadastrado, você receberá um email... verifique sua caixa de spam.');
     });
 }
+function togglePassword(button) {
+    const password = form.password();
+    const confirmpassword = form.confirmpassword();
+    
+    password.type = password.type === "password" ? "text" : "password";
+    confirmpassword.type = confirmpassword.type === "password" ? "text" : "password";
+    if (password.type === "text") {
+        button.textContent = "Ocultar senha";
+    } else {
+        button.textContent = "Mostrar senha";
+    }
+
+}
