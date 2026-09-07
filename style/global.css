@@ -1,6 +1,9 @@
 @charset "UTF-8";
     body{
         margin: 0;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.900)), url(background2.gif);
+        background-size: -400px;
+        background-position: center;
     }
     .centralized{
          display: flex;
