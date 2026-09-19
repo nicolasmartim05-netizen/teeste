@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+hr {
+  width: 100%; /* Garante que ele ocupe toda a largura da tela */
+  border: 0;
+  border-top: 1px solid #ccc; /* Estilo da linha */
+  margin: 20px 0; /* Espaçamento em cima e embaixo */
+}
+body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.900)), url(background2.gif);
+    display: flex;
+    flex-direction: column;
+    
+
+}
+p {
+    flex: 1 0 auto;
+}
+footer {
+    flex-shrink: 0;
+}

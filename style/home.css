@@ -1,0 +1,38 @@
+body {
+    height: 100vh;
+}
+body p, h1 {
+    color: white;
+}
+header {
+    background-color: rgb(159, 3, 3);
+    height: 55px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header button {
+    width: auto;
+   
+}
+header img {
+   width: 130px;
+}
+footer{
+    background: rgb(159, 3, 3);
+    color: white;
+    padding: 30px 50px;
+    margin-top: 50px;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: auto;
+}
+.footer-section h3 {
+    margin-top: 0;
+}
+.footer-section p {
+    margin: 8px 0;
+}
