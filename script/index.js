@@ -1,7 +1,9 @@
  firebase.auth().onAuthStateChanged(function(user){
     if (user) {
         window.location.href = "home.html"
-
+    }
+    if (user==="7qdJk3PWG7YJy31CgjhvSkscOUr2") {
+        window.location.href = "victoria.html"
     }
  })
  function onChangeEmail() {

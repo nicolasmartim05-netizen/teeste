@@ -1,5 +1,7 @@
 body {
     height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 body p, h1 {
     color: white;
@@ -10,6 +12,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 }
 header button {
     width: auto;
@@ -35,4 +38,15 @@ footer{
 }
 .footer-section p {
     margin: 8px 0;
+}
+p {
+    flex: 1 0 auto;
+    text-align:center ;
+}
+footer {
+    flex-shrink: 0;
+}
+hr {
+  width: 100%; 
+  margin: 20px 0;
 }
